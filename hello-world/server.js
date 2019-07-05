@@ -12,6 +12,9 @@ let root = {
     hello: _ => 'Hello World'
 }
 
+// Query
+let query = `{ hello }`;
+
 // Run Graphql query `{hello}` and print the response
-graphql(schema, `{ hello }`, root).then(console.log);
+graphql(schema, query, root).then(console.log);
 
